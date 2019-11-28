@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <title>Gender_Race_Age</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <style>
+        .nav nav-pills menu {
+            width: 200px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button1 {
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .navg {
+            background-color: black;
+            overflow: hidden;
+        }
+
+        /* Style the links inside the navigation bar */
+        .navg a {
+            background-color: black;
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .navg a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Add an active class to highlight the current page */
+        .navg a.active {
+            background-color: rgb(6, 38, 80);
+            color: white;
+        }
+
+        /* Hide the link that should open and close the topnav on small screens */
+        .navg .icon {
+            display: none;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-between;
+        }
+        body
+        {
+            background-color: lightgrey;
+        }
+
+    </style>
+</head>
+<body data-ng-app ="data" ng-controller="control" >
+
+<div class="navg" id="nav">
+    <br>
+    <ul class="nav nav-pills menu">
+        <li> <button class="button button1" onclick="window.location.href='home.html' ">HOME</button></li>
+        <li> <a data-toggle="pill" href="#gender" data-ng-click="genderf()">Gender_Vs_Crime</a></li>
+        <li> <a data-toggle="pill" href="#race" data-ng-click="racef()">Race_Vs_Crime</a></li>
+        <li> <a data-toggle="pill" href="#agetry" data-ng-click="age_try()">Age_Vs_Crime</a></li>
+        <li>  <a data-toggle="pill" href="#zip" data-ng-click="zip2017()">Zip_Vs_Crime</a></li>
+    </ul>
+    <br>
+</div>
+</div>
+
+<div class="tab-content">
+    <div id="agetry" class="tab-pane fade">
+        <div >
+            <div id="age_trychart"></div>
+            <div id="age_trychart1"></div>
+            <div id="age_trychart2"></div>
+        </div>
+
+    </div>
+    <div id="zip" class="tab-pane fade">
+        <div >
+            <div id="zipchart"></div>
+            <div id="zipchart1"></div>
+            <div id="zipchart2"></div>
+        </div>
+
+    </div>
+    <div id="race" class="tab-pane fade">
+        <div >
+            <div id="racechart"></div>
+        </div>
+        <div >
+            <div id="racechart1"></div>
+        </div>
+    </div>
+    <div id="gender" class="tab-pane fade">
+        <div >
+            <div id="genderchart"></div>
+        </div>
+        <div>
+            <div id="genderchart1"></div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<SCRIPT SRC="Gender_race_age.js"></SCRIPT>
+</body>
+</html>

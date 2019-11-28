@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <title>CRIME_TOP_CRIMES</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <style>
+        .nav nav-pills menu {
+            width: 200px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button1 {
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .navg {
+            background-color: black;
+            overflow: hidden;
+        }
+
+        /* Style the links inside the navigation bar */
+        .navg a {
+            background-color: black;
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .navg a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Add an active class to highlight the current page */
+        .navg a:active {
+            background-color: rgb(6, 38, 80);
+            color: white;
+        }
+
+        /* Hide the link that should open and close the topnav on small screens */
+        .navg .icon {
+            display: none;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-between;
+        }
+        body
+        {
+            background-color: lightgrey;
+        }
+
+    </style>
+</head>
+<body data-ng-app ="data" ng-controller="control" >
+
+<div class="navg" id="nav">
+    <br>
+    <ul class="nav nav-pills menu">
+        <li><button class="button button1" onclick="window.location.href='home.html' ">HOME</button></li>
+        <li><a data-toggle="pill" href="#total" data-ng-click="totalcrimes()">TOTAL CRIMES OVER THE YEARS</a></li>
+        <li><a data-toggle="pill" href="#top10" data-ng-click="top10crimes()">TOP 10 CRIMES</a></li>
+        <li><a data-toggle="pill" href="#zipcode" data-ng-click="zipcodef()">CRIMES WRT ZIP_CODES</a></li>
+    </ul>
+    <br>
+</div>
+</div>
+
+<div class="tab-content">
+    <div id="top10" class="tab-pane fade">
+
+        <div id="descchart"></div>
+        <div id="descchart1"></div>
+        <div id="descchart2"></div>
+
+
+    </div>
+    <div id="total" class="tab-pane fade">
+        <div >
+            <div id="crimecntchart"></div>
+            <div id="age_trychart1"></div>
+            <div id="age_trychart2"></div>
+        </div>
+
+    </div>
+    <div id="zipcode" class="tab-pane fade">
+        <div id="zipcodechart"></div>
+        <div id="zipcodechart1" style="float: right"></div>
+        <div id="zipcodechart2" style="float: left"></div>
+
+    </div>
+</div>
+</div>
+<SCRIPT SRC="crimes_topcrimes.js"></SCRIPT>
+</body>
+</html>

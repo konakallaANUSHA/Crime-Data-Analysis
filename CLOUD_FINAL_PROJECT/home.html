@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<title>KCPD CRIME ANALYSIS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+    body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+</div>
+
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+    <style>
+        .button {
+            border-radius: 4px;
+            background-color: 	black;
+            border: none;
+            color: antiquewhite;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+            width: 300px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+
+
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-32">
+        <br><br>
+
+        <h1><b><strong>KCPD CRIME DATA ANALYSIS</strong></b></h1>
+
+        <br><br>
+
+        <span class="alignment" style="padding-top: 220px">
+            <button class="button" onclick="window.location.href='crime_topcrimes.html'"><span>Crimes_Top Crimes</span> </button>
+            <span class="alignment" style="padding-top: 20px">
+                <button class="button" onclick="window.location.href='Gender_race_age.html'"><span>CRIME ON FACTORS</span> </button>
+                <span class="alignment" style="padding-top: 20px">
+                    <button class="button" onclick="window.location.href='Firearm.html'"><span>CRIMES ON Fire_Arm</span> </button>
+                </span>
+            </span>
+        </span>
+
+    </header>
+
+    <!-- Grid -->
+    <div class="w3-row">
+
+        <!-- Blog entries -->
+        <div class="w3-col">
+            <!-- Blog entry -->
+            <div class="w3-card-4 w3-margin w3-white">
+                <img src="https://www.lawnstarter.com/blog/wp-content/uploads/2016/10/Kansas-City-Skyline.jpg" alt="Nature" style="width:100%;height:500px;">
+                <div class="w3-container">
+                    <h3><b>KANSAS CITY</b></h3>
+                    <h5><span class="w3-opacity">KCPD Crime Data 2018</span></h5>
+                </div>
+
+                <div class="w3-container">
+                    <p>This is the most current information as of the date of upload taken from official KCPD open data. This provides the user the ability to view the most current crime information within Kansas City, Missouri. The displayed information is the most current information from the data source as of the date of upload.
+                        The data source is dynamic and therefore constantly changing.</p>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Blog entry -->
+            <div class="w3-card-4 w3-margin w3-white">
+                <div class="w3-container">
+                    <h3><b>SUMMARY</b></h3>
+                    <h5>KCPD CRIME DATA</h5>
+                </div>
+                    <p>
+                    <ul style="list-style-type:square;">
+                    <li>Over all crimes reported in the year 2017- 1,32,139</li>
+                    <li>Overall crimes reported in the year 2018- 1,28,938</li>
+                    <li> Overall crimes reported in the year 2019- 65,283</li>
+                    <li>From all the reported crimes top 10 crime types and zip codes over the past 3 years are</li>
+                    <li>property damage, stealing frm auto, auto theft, non aggravated assault, Burglury-residence, aggravated assault, stealing shoplifting, possesion, stealing frm building, stealing all other.</li>
+                    <li>64130, 64127, 64111, 64134, 64106, 64131, 64132, 64133, 64123, 64110 respectively.</li>
+                    <li>Most of the crimes done by age group 20-40 and more than 50% are done by males!</li>
+                    <li>About <strong>10%</strong> of the overall crimes uses <strong>FIRE ARM</strong> every year</li>
+                    <li>Most of the fire armed crimes done by the age group 20-30 of which most of the crimes are done by Afro-Americans over the years</li>
+                    </ul>
+                    </p>
+
+
+                </div>
+            </div>
+            <!-- END BLOG ENTRIES -->
+        </div>
+
+        <!-- END GRID -->
+    </div><br>
+
+    <!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+    <br><br>
+</footer>
+
+</body>
+</html>
